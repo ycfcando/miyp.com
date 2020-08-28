@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-cssmin": "^0.2.0",
+    "gulp-htmlmin": "^5.0.1"
+  }
 }
