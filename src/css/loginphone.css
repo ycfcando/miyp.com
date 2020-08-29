@@ -1,0 +1,130 @@
+html,
+body {
+  background: #f5f5f5;
+  font-size: 14px;
+  color: #757575;
+}
+#loginWrap {
+  width: 100%;
+  height: 644px;
+  padding-bottom: 80px;
+}
+#loginWrap .wrap {
+  width: 854px;
+  height: 544px;
+  margin: 150px auto 0 auto;
+  background: #fff;
+  position: relative;
+}
+#loginWrap .wrap article {
+  width: 358px;
+  height: 100%;
+  margin: 0 auto;
+}
+#loginWrap .wrap article fieldset {
+  border-top: 1px solid #e0e0e0;
+  margin-top: 40px;
+}
+#loginWrap .wrap article fieldset legend {
+  text-align: center;
+  color: #b0b0b0;
+}
+#loginWrap .wrap .ercode {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../images/login/icon_ercode.png) no-repeat -160px 0;
+}
+#loginWrap .wrap .ercode:hover {
+  background-position-x: -240px;
+}
+#loginH {
+  width: 100%;
+  height: 156px;
+  padding: 56px 0 40px 0;
+}
+#loginH p {
+  text-align: center;
+}
+#loginH p span {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-left: 6px;
+  background: url(../images/login/icon_help.png);
+}
+#loginH h2 {
+  width: 100%;
+  padding-bottom: 10px;
+  font-size: 24px;
+  color: #ff6700;
+  text-align: center;
+  font-weight: 100;
+}
+#login {
+  width: 100%;
+  text-align: center;
+}
+#login img {
+  width: 270px;
+  height: 270px;
+}
+#loginIcon {
+  width: 100%;
+  height: 38px;
+  text-align: center;
+  margin-top: 12px;
+}
+#loginIcon a {
+  width: 48px;
+  height: 55px;
+  display: inline-block;
+  margin: 0 16px;
+  text-align: center;
+}
+#loginIcon a i {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+#loginIcon a span {
+  font-size: 12px;
+  color: #888;
+}
+#loginIcon a:nth-child(1) i {
+  background: url(../images/login/icon_apps.png) no-repeat -32px 0;
+}
+#loginIcon a:nth-child(2) i {
+  background: url(../images/login/icon_apps.png) no-repeat -32px -32px;
+}
+#loginIcon a:nth-child(3) i {
+  background: url(../images/login/icon_apps.png) no-repeat 0px -32px;
+}
+#foot {
+  width: 100%;
+  height: 80px;
+  margin-top: 50px;
+}
+#foot #footWarn {
+  text-align: center;
+}
+#foot #footWarn span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/login/ghs.png);
+}
+#foot #footList {
+  text-align: center;
+  padding: 10px 0;
+}
+#foot #footList a {
+  padding: 0 10px;
+  color: #757575;
+}
+#foot #footList a:nth-child(1) {
+  color: #333;
+}

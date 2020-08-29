@@ -62,12 +62,44 @@ html,body{
 
 #login{
   width: 100%;
-  input{
+  .wrap{
     display: block;
     width: 100%;
     height: 48px;
-    padding: 13px 16px 13px 14px;
+    margin-top: 0;
+    margin-bottom: 14px;
     border: 1px solid #e0e0e0;
+    span{
+      float: left;
+      height: 46px;
+      text-align: center;
+      line-height: 46px;
+    }
+    input{
+      float: left;
+      height: 46px;
+      border: none;   
+      margin-bottom: 0;
+    }
+    &:nth-child(1)>input{
+      width: 292px;
+      padding: 13px 16px 14px;
+    }
+    &:nth-child(2)>input{
+      width: 245px;
+      padding: 13px 16px 14px;
+    }
+    &:nth-child(1)>span{
+      width: 64px;
+      border-right: 1px solid #e0e0e0;
+    }
+    &:nth-child(2)>span{
+      width: 111px;
+      border-left: 1px solid #e0e0e0;
+      a{
+        color: #003ab5;
+      }
+    }
   }
   button{
     width: 100%;

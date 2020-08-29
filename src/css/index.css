@@ -1,0 +1,730 @@
+html,
+body {
+  width: 100%;
+}
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+#head {
+  width: 100%;
+  height: 48px;
+  background: #333;
+}
+#head .container {
+  height: 100%;
+}
+#headList {
+  float: right;
+  height: 100%;
+  color: #e7e7e7;
+}
+#headList > span {
+  float: left;
+  height: 16px;
+  border-right: 1px solid #666;
+  margin-top: 17px;
+}
+#headList li {
+  font-size: 14px;
+  float: left;
+  height: 100%;
+  padding: 0 10px;
+  line-height: 48px;
+}
+#headList li > span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 0;
+  vertical-align: middle;
+}
+#headList li:nth-of-type(3) > span {
+  background-position-y: -964px;
+}
+#headList li:nth-of-type(5) {
+  position: relative;
+}
+#headList li:nth-of-type(5):hover div {
+  height: 80px;
+}
+#headList li:nth-of-type(5) > span {
+  background-position-y: -1680px;
+}
+#headList li:nth-of-type(5) > div {
+  width: 100%;
+  height: 0;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  left: -5px;
+  z-index: 5;
+  background: #fff;
+}
+#headList li:nth-of-type(5) > div a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #333;
+}
+#headList li:nth-of-type(5) > div a:hover {
+  color: #fff;
+  background-color: #845f3f;
+}
+#headList li a {
+  color: #e7e7e7;
+}
+#headList li a:hover {
+  color: #fff;
+}
+#body {
+  width: 100%;
+}
+#search {
+  width: 100%;
+  height: 76px;
+  padding: 20px 0 5px 0;
+}
+#search .container {
+  height: 100%;
+}
+#search .container h1 {
+  float: left;
+  height: 100%;
+  width: 123px;
+  text-indent: -9999px;
+  background: url(../images/index/icon/logo@2x.cf8cc6a8.png) no-repeat 50%;
+  background-size: 100%;
+}
+#search .container .left {
+  height: 100%;
+  float: right;
+  padding-left: 30px;
+}
+#search .container .left .h2Box {
+  height: 100%;
+  width: 420px;
+  float: left;
+  line-height: 51px;
+}
+#search .container .left .h2Box a {
+  margin-right: 32px;
+  font-size: 18px;
+  color: #666;
+}
+#search .container .left .search {
+  float: right;
+  height: 100%;
+}
+#search .container .left .search label {
+  float: left;
+  width: 281px;
+  height: 41px;
+  padding: 9px 0 0 35px;
+  position: relative;
+  border-bottom: 1px solid #e7e7e7;
+}
+#search .container .left .search label span {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1474px;
+}
+#search .container .left .search label input {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+#search .container .left .search > span {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-top: 12px;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1200px;
+}
+#nav {
+  height: 358px;
+}
+#nav nav {
+  float: left;
+  width: 221px;
+  height: 100%;
+  padding-top: 14px;
+  background-color: #9f8052;
+}
+#nav nav > li {
+  width: 100%;
+  height: 33px;
+  line-height: 33px;
+  font-size: 14px;
+  color: #fff;
+  padding: 0 30px;
+}
+#nav nav > li:hover {
+  background-color: #845f3f;
+}
+#nav nav > li a {
+  color: #fff;
+}
+#nav nav > li a:hover {
+  color: #dfaf7e;
+}
+#nav div {
+  float: left;
+  width: 859px;
+  height: 100%;
+}
+#displayList {
+  height: 189px;
+  padding-top: 30px;
+}
+#displayList ul {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+}
+#displayList ul li {
+  float: left;
+  height: 100%;
+  width: 130px;
+  margin-right: 107px;
+}
+#displayList ul li:last-of-type {
+  margin: 0;
+}
+#displayList ul li > div {
+  width: 100%;
+  height: 120px;
+  padding: 25px 25px 15px 25px;
+}
+#displayList ul li > div img {
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+#displayList ul li > p {
+  width: 100%;
+  height: 19px;
+  margin-top: 4px;
+  text-align: center;
+  color: #666666;
+}
+#displaygood {
+  overflow: hidden;
+}
+#displaygood .goods1 {
+  width: 100%;
+  height: 302px;
+  margin-top: 35px;
+}
+#displaygood .goods1 .head {
+  width: 100%;
+  height: 37px;
+  margin-bottom: 20px;
+  position: relative;
+}
+#displaygood .goods1 .head > h3 {
+  display: inline;
+  color: #333;
+  font-size: 28px;
+  font-weight: 400;
+}
+#displaygood .goods1 .head > span {
+  margin-left: 12px;
+  font-size: 14px;
+  color: #999;
+}
+#displaygood .goods1 .head > a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #999;
+  font-size: 14px;
+  padding-top: 8px;
+}
+#displaygood .goods1 .head > a span:nth-child(2) {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1135px;
+  vertical-align: middle;
+}
+#displaygood .goods1 .dpy {
+  width: 100%;
+  height: 245px;
+}
+#displaygood .goods1 .dpy li {
+  float: left;
+  width: 266px;
+  height: 100%;
+  margin-left: 5px;
+}
+#displaygood .goods1 .dpy li .dpyInner {
+  width: 100%;
+  height: 210px;
+  background-color: #f8f8f8;
+  padding: 25px 0 0 15px;
+  position: relative;
+}
+#displaygood .goods1 .dpy li .dpyInner p:first-of-type {
+  width: 100%;
+  height: 24px;
+  color: #333;
+  font-size: 20px;
+}
+#displaygood .goods1 .dpy li .dpyInner p:last-of-type {
+  width: 100%;
+  height: 28px;
+  color: #a92112;
+  font-size: 24px;
+  margin-top: 16px;
+}
+#displaygood .goods1 .dpy li .dpyInner img {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  bottom: 10px;
+  right: 15px;
+}
+#displaygood .goods1 .dpy li > p {
+  width: 100%;
+  height: 35px;
+  position: relative;
+}
+#displaygood .goods1 .dpy li > p > span:first-of-type {
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin-bottom: 10px;
+  background: url(../images/index/icon/bar.64e546f1.jpg);
+}
+#displaygood .goods1 .dpy li > p > span:nth-of-type(2) {
+  margin-left: 20px;
+  color: #a92112;
+  font-size: 18px;
+}
+#displaygood .goods1 .dpy li > p > span:nth-of-type(3) {
+  color: #999;
+  font-size: 15px;
+}
+#displaygood .goods1 .dpy li > p > span:nth-of-type(4) {
+  display: inline-block;
+  width: 25px;
+  height: 18px;
+  padding: 0 6px;
+  color: #FFF;
+  font-size: 12px;
+  background-color: #fecf00;
+  vertical-align: middle;
+}
+#displaygood .goods1 .dpy li > p > span:nth-of-type(5) {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  font-size: 14px;
+  color: #a92112;
+}
+#displaygood .goods1 .dpy li:first-child {
+  width: 537px;
+  margin: 0;
+}
+#displaygood .goods1 .dpy li:first-child .dpyInner {
+  padding: 25px 0 0 23px;
+  background: #f3f0e9;
+}
+#displaygood .goods1 .dpy li:first-child .dpyInner p:nth-of-type(2) {
+  width: 100%;
+  height: 20px;
+  font-size: 16px;
+  color: #999;
+  margin-top: 8px;
+}
+#displaygood .goods1 .dpy li:first-child .dpyInner img {
+  position: absolute;
+  width: 215px;
+  height: 215px;
+  right: 15px;
+  bottom: 10px;
+}
+#displaygood .goods1 .dpy li:last-child > p > span:nth-of-type(4) {
+  background-color: #f62700;
+}
+#displaygood .goods2 {
+  width: 100%;
+  margin-top: 35px;
+}
+#displaygood .goods2 .head {
+  width: 100%;
+  height: 37px;
+  margin-bottom: 20px;
+  position: relative;
+}
+#displaygood .goods2 .head > h3 {
+  display: inline;
+  color: #333;
+  font-size: 28px;
+  font-weight: 400;
+}
+#displaygood .goods2 .head > a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #999;
+  font-size: 14px;
+  padding-top: 8px;
+}
+#displaygood .goods2 .head > a span:nth-child(2) {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1135px;
+  vertical-align: middle;
+}
+#displaygood .goods2 .dpy {
+  width: 100%;
+  height: 354px;
+}
+#displaygood .goods3 {
+  width: 100%;
+  margin-top: 35px;
+}
+#displaygood .goods3 .head {
+  width: 100%;
+  height: 37px;
+  margin-bottom: 20px;
+  position: relative;
+}
+#displaygood .goods3 .head > h3 {
+  display: inline;
+  color: #333;
+  font-size: 28px;
+  font-weight: 400;
+}
+#displaygood .goods3 .head > span {
+  margin-left: 12px;
+  font-size: 14px;
+  color: #999;
+}
+#displaygood .goods3 .head > a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #999;
+  font-size: 14px;
+  padding-top: 8px;
+}
+#displaygood .goods3 .head > a span:nth-child(2) {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1135px;
+  vertical-align: middle;
+}
+#displaygood .goods3 .dpy {
+  width: 100%;
+  height: 375px;
+}
+#displaygood .goods4 {
+  width: 100%;
+  margin-top: 35px;
+}
+#displaygood .goods4 .head {
+  width: 100%;
+  height: 37px;
+  margin-bottom: 20px;
+  position: relative;
+}
+#displaygood .goods4 .head > h3 {
+  display: inline;
+  color: #333;
+  font-size: 28px;
+  font-weight: 400;
+}
+#displaygood .goods4 .dpy {
+  width: 100%;
+}
+#domdpy1 {
+  width: 2660px;
+  height: 100%;
+}
+#domdpy1 li {
+  float: left;
+  width: 266px;
+  height: 100%;
+  margin-left: 5px;
+  transition: 0.4s;
+}
+#domdpy1 li .dpyInner {
+  width: 100%;
+  height: 266px;
+}
+#domdpy1 li .dpyInner img {
+  width: 100%;
+  height: 100%;
+}
+#domdpy1 li .text {
+  width: 100%;
+  height: 88px;
+  padding: 13px 0 15px 0;
+  background-color: #faf6ef;
+}
+#domdpy1 li .text p:first-child {
+  color: #333;
+  font-size: 19px;
+  line-height: 23px;
+  height: 23px;
+  text-align: center;
+}
+#domdpy1 li .text p:last-child {
+  margin-top: 11px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 22px;
+  color: #a92112;
+  text-align: center;
+}
+#domdpy1 li .text p:last-child span:last-child {
+  font-size: 14px;
+  color: #333;
+  text-decoration: line-through;
+}
+#domdpy1 li:first-child {
+  margin: 0;
+}
+#domdpy1 li:hover {
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0);
+}
+#domdpy2 {
+  width: 2660px;
+  height: 100%;
+}
+#domdpy2 li {
+  float: left;
+  width: 266px;
+  height: 100%;
+  margin-left: 5px;
+  transition: 0.4s;
+}
+#domdpy2 li .dpyInner {
+  width: 100%;
+  height: 266px;
+}
+#domdpy2 li .dpyInner img {
+  width: 100%;
+  height: 100%;
+}
+#domdpy2 li .text {
+  width: 100%;
+  height: 109px;
+  padding: 13px 0 10px 0;
+}
+#domdpy2 li .text p:first-child {
+  color: #333;
+  font-size: 19px;
+  line-height: 23px;
+  height: 23px;
+  text-align: center;
+}
+#domdpy2 li .text p:nth-child(2) {
+  color: #666;
+  font-size: 14px;
+  line-height: 18px;
+  height: 18px;
+  margin-top: 8px;
+  text-align: center;
+}
+#domdpy2 li .text p:last-child {
+  margin-top: 11px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 22px;
+  color: #a92112;
+  text-align: center;
+}
+#domdpy2 li:first-child {
+  margin: 0;
+}
+#domdpy2 li:hover {
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0);
+}
+#goods {
+  float: left;
+  width: 266px;
+  height: 350px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  border: 1px solid #e7e7e7;
+  transition: 0.4s;
+}
+#goods .top {
+  width: 100%;
+  height: 198px;
+  padding: 0 35px 3px 35px;
+  font-size: 0;
+}
+#goods .top img {
+  width: 195px;
+  height: 195px;
+}
+#goods > p {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  color: #845f3f;
+  font-size: 16px;
+  line-height: 20px;
+}
+#goods .bottom {
+  width: 100%;
+  height: 112px;
+  padding: 13px 0 10px 0;
+}
+#goods .bottom div {
+  width: 100%;
+  height: 24px;
+  padding: 2px 0;
+  text-align: center;
+}
+#goods .bottom p {
+  width: 100%;
+  height: 22px;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 22px;
+}
+#goods .bottom p:first-child {
+  color: #333;
+  font-size: 18px;
+}
+#goods .bottom p:last-child {
+  color: #a92112;
+  font-size: 14px;
+}
+#goods:nth-of-type(4n) {
+  margin-right: 0;
+}
+#goods:hover {
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0);
+}
+#fixbar {
+  width: 81px;
+  height: 363px;
+  position: fixed;
+  top: 220px;
+  right: 10px;
+  z-index: 999;
+  padding: 0 5px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+}
+#fixbar a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #e7e7e7;
+  text-align: center;
+}
+#fixbar a span:nth-child(1) {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0;
+}
+#fixbar a:nth-child(1) span:nth-child(1) {
+  background-position-y: -1646px;
+}
+#fixbar a:nth-child(1):hover > span {
+  background-position-y: -1612px;
+  color: #845f3f;
+}
+#fixbar a:nth-child(2) span:nth-child(1) {
+  background-position-y: -1274px;
+}
+#fixbar a:nth-child(2):hover > span {
+  background-position-y: -1240px;
+  color: #845f3f;
+}
+#fixbar a:nth-child(3) span:nth-child(1) {
+  background-position-y: -797px;
+}
+#fixbar a:nth-child(3):hover > span {
+  background-position-y: -763px;
+  color: #845f3f;
+}
+#fixbar a:nth-child(4) span:nth-child(1) {
+  background-position-y: -1002px;
+}
+#fixbar a:nth-child(4):hover > span {
+  background-position-y: -1784px;
+  color: #845f3f;
+}
+#fixbar a:nth-child(5) {
+  border: none;
+}
+#fixbar a:nth-child(5) span:nth-child(1) {
+  background-position-y: -1305px;
+}
+#fixbar a:nth-child(5):hover > span {
+  background-position-y: -1339px;
+  color: #845f3f;
+}
+#foot {
+  width: 100%;
+  height: 136px;
+  margin-top: 60px;
+  padding: 45px 0;
+}
+#foot .container {
+  height: 100%;
+}
+#foot .container h2 {
+  float: left;
+  width: 123px;
+  height: 100%;
+  background: url(../images/index/icon/logo@2x.cf8cc6a8.png) no-repeat 50%;
+  background-size: 100%;
+}
+#foot .container div {
+  float: right;
+  width: 700px;
+  height: 92px;
+  padding-right: 138px;
+  position: relative;
+}
+#foot .container div > span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 36px;
+  background: url(../images/index/icon/f-logo.c6285587.png) no-repeat 50%;
+  background-size: 100%;
+}
+#foot .container div p {
+  line-height: 23px;
+  font-size: 12px;
+}
+#foot .container div p:nth-child(1) > span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url(../images/index/icon/record-icon.d0289dc0.png) no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+}

@@ -1,0 +1,758 @@
+html,body{
+  width: 100%;
+}
+//public
+.container{
+  width: 1080px;
+  margin: 0 auto;
+}
+
+//header
+#head{
+  width: 100%;
+  height: 48px;
+  background: #333;
+  .container{
+    height: 100%;
+  }
+}
+#headList{
+  float: right;
+  height: 100%;
+  color: #e7e7e7;
+  &>span{
+    float: left;
+    height: 16px;
+    border-right: 1px solid #666;
+    margin-top: 17px;
+  }
+  li{
+    font-size: 14px;
+    float: left;
+    height: 100%;
+    padding: 0 10px;
+    line-height: 48px;
+    &>span{
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 0;
+      vertical-align: middle;
+    }
+    &:nth-of-type(3)>span{
+      background-position-y: -964px;
+    }
+    &:nth-of-type(5){   
+      position: relative;  
+      &:hover{
+        div{
+          height: 80px;
+        }
+      } 
+      &>span{
+        background-position-y: -1680px;     
+      }
+      &>div{
+        width: 100%;
+        height: 0;
+        box-shadow: 0 0 18px rgba(0, 0, 0,.1);
+        transition: 0.3s;
+        overflow: hidden;
+        position: absolute;
+        top: 100%;
+        left: -5px;
+        z-index: 5;
+        background: #fff;
+        a{
+          display: block;
+          width: 100%;
+          height: 40px;
+          text-align: center;
+          line-height: 40px;
+          color: #333;
+          &:hover{
+            color: #fff;
+            background-color: #845f3f;
+          }
+        }
+      }
+    }
+    a{      
+      color: #e7e7e7;
+      &:hover{
+        color: #fff;
+      }
+    }
+  }
+}
+
+//body
+#body{
+  width: 100%;
+}
+
+//search
+#search{
+  width: 100%;
+  height: 76px;
+  padding: 20px 0 5px 0;
+  .container{
+    height: 100%;
+    h1{
+      float: left;
+      height: 100%;
+      width: 123px;
+      text-indent: -9999px;
+      background: url(../images/index/icon/logo@2x.cf8cc6a8.png) no-repeat 50%;
+      background-size: 100%;
+    }
+    .left{
+      height: 100%;
+      float: right;
+      padding-left: 30px;
+      .h2Box{
+        height: 100%;
+        width: 420px;
+        float: left;
+        line-height: 51px;
+        a{
+          margin-right: 32px;
+          font-size: 18px;
+          color: #666;
+        }
+      }
+      .search{
+        float: right;
+        height: 100%;
+        label{
+          float: left;
+          width: 281px;
+          height: 41px;
+          padding: 9px 0 0 35px;
+          position: relative;
+          border-bottom: 1px solid #e7e7e7;
+          span{
+            position: absolute;
+            top: 50%-30px;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1474px;
+          }
+          input{
+            height: 100%;
+            width: 100%;
+            border: none;
+          }
+        }
+        &>span{
+          width: 30px;
+          height: 30px;
+          float: left;
+          margin-top: 12px;
+          background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1200px;
+        }
+      }
+    }
+  }
+}
+//nav
+#nav{
+  height: 358px;
+  nav{
+    float: left;
+    width: 221px;
+    height: 100%;
+    padding-top: 14px;
+    background-color: #9f8052;
+    &>li{
+      width: 100%;
+      height: 33px;
+      line-height: 33px;;
+      font-size: 14px;
+      color: #fff;
+      padding: 0 30px;
+      &:hover{
+        background-color: #845f3f;
+      }
+      a{
+        color: #fff;
+        &:hover{
+          color: #dfaf7e;
+        }
+      }
+    }
+  }
+  div{
+    float: left;
+    width: 859px;
+    height: 100%;
+  }
+}
+//displayList
+#displayList{
+  height: 189px;
+  padding-top: 30px;
+  ul{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+    li{
+      float: left;
+      height: 100%;
+      width: 130px;
+      margin-right: 107px;
+      &:last-of-type{
+        margin: 0;
+      }
+      &>div{
+        width: 100%;
+        height: 120px;
+        padding: 25px 25px 15px 25px;
+        img{
+          display: block;
+          width: 80px;
+          height: 80px;
+        }
+      }
+      &>p{
+        width: 100%;
+        height: 19px;
+        margin-top: 4px;
+        text-align: center;
+        color: rgb(102, 102, 102);
+      }
+    }
+  }
+}
+
+//displaygood
+#displaygood{
+  overflow: hidden;
+  .goods1{
+    width: 100%;
+    height: 302px;
+    margin-top: 35px;
+    .head{
+      width: 100%;
+      height: 37px;
+      margin-bottom: 20px;
+      position: relative;
+      &>h3{
+        display: inline;
+        color: #333;
+        font-size: 28px;
+        font-weight: 400;
+      }
+      &>span{
+        margin-left: 12px;
+        font-size: 14px;
+        color: #999;
+      }
+      &>a{
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #999;
+        font-size: 14px;
+        padding-top: 8px;
+        span:nth-child(2){
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1135px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .dpy{
+      width: 100%;
+      height: 245px;
+      li{
+        float: left;
+        width: 266px;
+        height: 100%;
+        margin-left: 5px;
+        .dpyInner{
+          width: 100%;
+          height: 210px;
+          background-color: rgb(248, 248, 248);
+          padding: 25px 0 0 15px;
+          position: relative;
+          p:first-of-type{
+            width: 100%;
+            height: 24px;
+            color: #333;
+            font-size: 20px;
+          }
+          p:last-of-type{
+            width: 100%;
+            height: 28px;
+            color: #a92112;
+            font-size: 24px;
+            margin-top: 16px;
+          }
+          img{
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            bottom: 10px;
+            right: 15px;
+          }
+        }
+        &>p{
+          width: 100%;
+          height: 35px;
+          position: relative;
+          &>span:first-of-type{
+            display: block;
+            width: 100%;
+            height: 3px;
+            margin-bottom: 10px;
+            background: url(../images/index/icon/bar.64e546f1.jpg);
+          }
+          &>span:nth-of-type(2){
+            margin-left: 20px;
+            color: #a92112;
+            font-size: 18px;
+          }
+          &>span:nth-of-type(3){
+            color: #999;
+            font-size: 15px;
+          }
+          &>span:nth-of-type(4){
+            display: inline-block;
+            width: 25px;
+            height: 18px;
+            padding: 0 6px;
+            color: #FFF;
+            font-size: 12px;
+            background-color: rgb(254, 207, 0);
+            vertical-align: middle;
+          }
+          &>span:nth-of-type(5){
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            font-size: 14px;
+            color: #a92112;
+          }
+        }
+        &:first-child{
+          width: 537px;
+          margin: 0;
+          .dpyInner{
+            padding: 25px 0 0 23px;
+            background: #f3f0e9;
+            p:nth-of-type(2){
+              width: 100%;
+              height: 20px;
+              font-size: 16px;
+              color: #999;
+              margin-top: 8px;
+            }
+            img{
+              position: absolute;
+              width: 215px;
+              height: 215px;
+              right: 15px;
+              bottom: 10px;
+            }
+          }
+        }
+        &:last-child>p{
+          &>span:nth-of-type(4){
+            background-color: rgb(246, 39, 0);
+          }
+        }
+      }
+    }
+  }
+  .goods2{
+    width: 100%;
+    margin-top: 35px;
+    .head{
+      width: 100%;
+      height: 37px;
+      margin-bottom: 20px;
+      position: relative;
+      &>h3{
+        display: inline;
+        color: #333;
+        font-size: 28px;
+        font-weight: 400;
+      }
+      &>a{
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #999;
+        font-size: 14px;
+        padding-top: 8px;
+        span:nth-child(2){
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1135px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .dpy{
+      width: 100%;
+      height: 354px;     
+    }
+  }
+  .goods3{
+    width: 100%;
+    margin-top: 35px;
+    .head{
+      width: 100%;
+      height: 37px;
+      margin-bottom: 20px;
+      position: relative;
+      &>h3{
+        display: inline;
+        color: #333;
+        font-size: 28px;
+        font-weight: 400;
+      }
+      &>span{
+        margin-left: 12px;
+        font-size: 14px;
+        color: #999;
+      }
+      &>a{
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #999;
+        font-size: 14px;
+        padding-top: 8px;
+        span:nth-child(2){
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1135px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .dpy{
+      width: 100%;
+      height: 375px;     
+    }
+  }
+  .goods4{
+    width: 100%;
+    margin-top: 35px;
+    .head{
+      width: 100%;
+      height: 37px;
+      margin-bottom: 20px;
+      position: relative;
+      &>h3{
+        display: inline;
+        color: #333;
+        font-size: 28px;
+        font-weight: 400;
+      }
+    }
+    .dpy{
+      width: 100%;           
+    }
+  }
+}
+#domdpy1{
+  width: 2660px;
+  height: 100%;
+  li{
+    float: left;
+    width: 266px;
+    height: 100%;
+    margin-left: 5px;
+    transition: .4s;
+    .dpyInner{
+      width: 100%;
+      height: 266px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .text{
+      width: 100%;
+      height: 88px;
+      padding: 13px 0 15px 0;
+      background-color: rgb(250, 246, 239);
+      p:first-child{
+        color: #333;
+        font-size: 19px;
+        line-height: 23px;
+        height: 23px;
+        text-align: center;
+      }
+      p:last-child{
+        margin-top: 11px;
+        height: 26px;
+        line-height: 26px;
+        font-size: 22px;
+        color: #a92112;
+        text-align: center;
+        span:last-child{
+          font-size: 14px;
+          color: #333;
+          text-decoration: line-through;
+        }
+      }
+    }
+    &:first-child{
+      margin: 0;
+    }
+    &:hover{
+      -webkit-box-shadow: 0 2px 20px rgba(0,0,0,.1);
+      box-shadow: 0 2px 20px rgba(0,0,0,.1);
+      -webkit-transform: translate3d(0,-2px,0);
+      transform: translate3d(0,-2px,0);
+    }
+  }
+}
+#domdpy2{
+  width: 2660px;
+  height: 100%;
+  li{
+    float: left;
+    width: 266px;
+    height: 100%;
+    margin-left: 5px;
+    transition: .4s;
+    .dpyInner{
+      width: 100%;
+      height: 266px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .text{
+      width: 100%;
+      height: 109px;
+      padding: 13px 0 10px 0;
+      p:first-child{
+        color: #333;
+        font-size: 19px;
+        line-height: 23px;
+        height: 23px;
+        text-align: center;
+      }
+      p:nth-child(2){
+        color: #666;
+        font-size: 14px;
+        line-height: 18px;
+        height: 18px;
+        margin-top: 8px;
+        text-align: center;
+      }
+      p:last-child{
+        margin-top: 11px;
+        height: 26px;
+        line-height: 26px;
+        font-size: 22px;
+        color: #a92112;
+        text-align: center;
+      }
+    }
+    &:first-child{
+      margin: 0;
+    }
+    &:hover{
+      -webkit-box-shadow: 0 2px 20px rgba(0,0,0,.1);
+      box-shadow: 0 2px 20px rgba(0,0,0,.1);
+      -webkit-transform: translate3d(0,-2px,0);
+      transform: translate3d(0,-2px,0);
+    }
+  }
+}
+#goods{
+  float: left;
+  width: 266px;
+  height: 350px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  border: 1px solid #e7e7e7;
+  transition: .4s;
+  .top{
+    width: 100%;
+    height: 198px;
+    padding: 0 35px 3px 35px;
+    font-size: 0;
+    img{
+      width: 195px;
+      height: 195px;
+    }
+  }
+  &>p{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    color: #845f3f;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .bottom{
+    width: 100%;
+    height: 112px;
+    padding: 13px 0 10px 0;
+    div{
+      width: 100%;
+      height: 24px;
+      padding: 2px 0;
+      text-align: center;
+    }
+    p{
+      width: 100%;
+      height: 22px;
+      margin-top: 10px;
+      text-align: center;
+      line-height: 22px;
+      &:first-child{
+        color: #333;
+        font-size: 18px;
+      }
+      &:last-child{
+        color: #a92112;
+        font-size: 14px;
+      }
+    }
+  }
+  &:nth-of-type(4n){
+    margin-right: 0;
+  }
+  &:hover{
+    -webkit-box-shadow: 0 2px 20px rgba(0,0,0,.1);
+    box-shadow: 0 2px 20px rgba(0,0,0,.1);
+    -webkit-transform: translate3d(0,-2px,0);
+    transform: translate3d(0,-2px,0);
+  }
+}
+//
+
+//fixbar
+#fixbar{
+  width: 81px;
+  height: 363px;
+  position: fixed;
+  top: 220px;
+  right: 10px;
+  z-index: 999;
+  padding: 0 5px;
+  box-shadow: 0 0 18px rgba(0, 0, 0,.1);
+  a{
+    @y: 34px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    text-align: center;
+    span:nth-child(1){
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin: 0 auto;
+      margin-bottom: 8px;
+      background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0;
+    }
+    &:nth-child(1){
+      span:nth-child(1){
+        background-position-y: -1646px;
+      }
+      &:hover>span{
+        background-position-y: -1646px+@y;
+        color: #845f3f;
+      }
+    }
+    &:nth-child(2){
+      span:nth-child(1){
+        background-position-y: -1274px;
+      }
+      &:hover>span{
+        background-position-y: -1274px+@y;
+        color: #845f3f;
+      }
+    }
+    &:nth-child(3){
+      span:nth-child(1){
+        background-position-y: -797px;
+      }
+      &:hover>span{
+        background-position-y: -797px+@y;
+        color: #845f3f;
+      }
+    }
+    &:nth-child(4){
+      span:nth-child(1){
+        background-position-y: -1002px;
+      }
+      &:hover>span{
+        background-position-y: -1784px;
+        color: #845f3f;
+      }
+    }
+    &:nth-child(5){
+      border: none;
+      span:nth-child(1){
+        background-position-y: -1305px;
+      }
+      &:hover>span{
+        background-position-y: -1305px-@y;
+        color: #845f3f;
+      }
+    }
+  }
+}
+
+//foot
+#foot{
+  width: 100%;
+  height: 136px;
+  margin-top: 60px;
+  padding: 45px 0;
+  .container{
+    height: 100%;
+    h2{
+      float: left;
+      width: 123px;
+      height: 100%;
+      background: url(../images/index/icon/logo@2x.cf8cc6a8.png) no-repeat 50%;
+      background-size: 100%;
+    }    
+    div{
+      float: right;
+      width: 700px;
+      height: 92px;
+      padding-right: 138px;
+      position: relative;
+      &>span{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 36px;
+        background: url(../images/index/icon/f-logo.c6285587.png) no-repeat 50%;
+        background-size: 100%;
+      }
+      p{
+        line-height: 23px;
+        font-size: 12px;
+      }
+      p:nth-child(1)>span{
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url(../images/index/icon/record-icon.d0289dc0.png) no-repeat;
+        background-size: 100%;
+        vertical-align: middle;
+      }
+    }
+  }
+}

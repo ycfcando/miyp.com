@@ -60,12 +60,44 @@ body {
 #login {
   width: 100%;
 }
-#login input {
+#login .wrap {
   display: block;
   width: 100%;
   height: 48px;
-  padding: 13px 16px 13px 14px;
+  margin-top: 0;
+  margin-bottom: 14px;
   border: 1px solid #e0e0e0;
+}
+#login .wrap span {
+  float: left;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+}
+#login .wrap input {
+  float: left;
+  height: 46px;
+  border: none;
+  margin-bottom: 0;
+}
+#login .wrap:nth-child(1) > input {
+  width: 292px;
+  padding: 13px 16px 14px;
+}
+#login .wrap:nth-child(2) > input {
+  width: 245px;
+  padding: 13px 16px 14px;
+}
+#login .wrap:nth-child(1) > span {
+  width: 64px;
+  border-right: 1px solid #e0e0e0;
+}
+#login .wrap:nth-child(2) > span {
+  width: 111px;
+  border-left: 1px solid #e0e0e0;
+}
+#login .wrap:nth-child(2) > span a {
+  color: #003ab5;
 }
 #login button {
   width: 100%;
