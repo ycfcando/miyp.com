@@ -1,0 +1,494 @@
+html,
+body {
+  width: 100%;
+}
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+#head {
+  width: 100%;
+  height: 48px;
+  background: #333;
+}
+#head .container {
+  height: 100%;
+}
+#headList {
+  float: right;
+  height: 100%;
+  color: #e7e7e7;
+}
+#headList > span {
+  float: left;
+  height: 16px;
+  border-right: 1px solid #666;
+  margin-top: 17px;
+}
+#headList li {
+  font-size: 14px;
+  float: left;
+  height: 100%;
+  padding: 0 10px;
+  line-height: 48px;
+}
+#headList li > span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 0;
+  vertical-align: middle;
+}
+#headList li:nth-of-type(3) > span {
+  background-position-y: -964px;
+}
+#headList li:nth-of-type(5) {
+  position: relative;
+}
+#headList li:nth-of-type(5):hover div {
+  height: 80px;
+}
+#headList li:nth-of-type(5) > span {
+  background-position-y: -1680px;
+}
+#headList li:nth-of-type(5) > div {
+  width: 100%;
+  height: 0;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  left: -5px;
+  z-index: 5;
+  background: #fff;
+}
+#headList li:nth-of-type(5) > div a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #333;
+}
+#headList li:nth-of-type(5) > div a:hover {
+  color: #fff;
+  background-color: #845f3f;
+}
+#headList li a {
+  color: #e7e7e7;
+}
+#headList li a:hover {
+  color: #fff;
+}
+#body {
+  width: 100%;
+}
+#search {
+  width: 100%;
+  height: 76px;
+  padding: 20px 0 5px 0;
+}
+#search .container {
+  height: 100%;
+}
+#search .container h1 {
+  float: left;
+  height: 100%;
+  width: 123px;
+  text-indent: -9999px;
+  background: url(../images/index/icon/logo@2x.cf8cc6a8.png) no-repeat 50%;
+  background-size: 100%;
+}
+#search .container .left {
+  height: 100%;
+  float: right;
+  padding-left: 30px;
+}
+#search .container .left .h2Box {
+  height: 100%;
+  width: 420px;
+  float: left;
+  line-height: 51px;
+}
+#search .container .left .h2Box a {
+  margin-right: 32px;
+  font-size: 18px;
+  color: #666;
+}
+#search .container .left .search {
+  float: right;
+  height: 100%;
+}
+#search .container .left .search label {
+  float: left;
+  width: 281px;
+  height: 41px;
+  padding: 9px 0 0 35px;
+  position: relative;
+  border-bottom: 1px solid #e7e7e7;
+}
+#search .container .left .search label span {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1474px;
+}
+#search .container .left .search label input {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+#search .container .left .search > a {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-top: 12px;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1200px;
+}
+#detail {
+  width: 100%;
+  padding-top: 60px;
+  border-top: 1px solid #e7e7e7;
+}
+#goodshead {
+  width: 100%;
+  height: 553px;
+  margin-bottom: 67px;
+  overflow: hidden;
+}
+#goodshead > .img {
+  float: left;
+  width: 465px;
+  height: 374px;
+  margin-right: 46px;
+}
+#goodshead > .text {
+  float: left;
+  width: 561px;
+  height: 553px;
+}
+#goodshead > .text > h2 {
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  font-size: 20px;
+  color: #333;
+  font-weight: 100;
+}
+#goodshead > .text > p {
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+  color: #999;
+}
+#goodshead > .text > p:nth-of-type(2) {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px 26px 10px;
+  font-size: 12px;
+  color: #333;
+}
+#goodshead > .text > p:nth-of-type(2) > span {
+  margin-right: 10px;
+}
+#goodshead > .text > .series {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 26px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+}
+#goodshead > .text > .series > p {
+  height: 37px;
+  margin: 12px 0;
+}
+#goodshead > .text > .series > p > span {
+  display: inline-block;
+  height: 100%;
+  line-height: 32px;
+}
+#goodshead > .text > .series > p > span:nth-child(1) {
+  width: 48px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+#goodshead > .text > .series > p > span:nth-child(2) {
+  font-size: 25px;
+  color: #c00000;
+}
+#goodshead > .text > .series > p > span:nth-child(3) {
+  margin-left: 14px;
+  font-size: 12px;
+  color: #ccc;
+  text-decoration: line-through;
+}
+#goodshead > .text > .series > .bottom {
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+#goodshead > .text > .series > .bottom > span {
+  float: left;
+  width: 48px;
+  margin-right: 10px;
+  height: 72px;
+}
+#goodshead > .text > .series > .bottom > p {
+  height: 24px;
+}
+#goodshead > .text > .series > .bottom > p > span {
+  font-size: 16px;
+  display: inline-block;
+  padding-left: 24px;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -231px;
+}
+#goodshead > .text > div:nth-of-type(2) {
+  height: 52px;
+  margin-bottom: 14px;
+  padding: 10px 0;
+}
+#goodshead > .text > div:nth-of-type(2) > span {
+  float: left;
+  width: 48px;
+  height: 32px;
+  line-height: 32px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+  color: #333;
+}
+#goodshead > .text > div:nth-of-type(2) > .wrap {
+  float: left;
+  border: 1px solid #d6d6d6;
+  font-size: 0;
+}
+#goodshead > .text > div:nth-of-type(2) > .wrap > span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+#goodshead > .text > div:nth-of-type(2) > .wrap > span:nth-of-type(1) {
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1406px;
+}
+#goodshead > .text > div:nth-of-type(2) > .wrap > span:nth-of-type(2) {
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1032px;
+}
+#goodshead > .text > div:nth-of-type(2) > .wrap > input {
+  width: 60px;
+  height: 30px;
+  border: none;
+  vertical-align: middle;
+  border-right: 1px solid #d6d6d6;
+  border-left: 1px solid #d6d6d6;
+  text-align: center;
+}
+#shopbtn {
+  width: 167px;
+  height: 52px;
+  line-height: 50px;
+  font-size: 20px;
+  border-radius: 2px;
+  text-align: center;
+  background-color: #845f3f;
+  border: none;
+  color: #fff;
+}
+#shopbtn:hover {
+  opacity: 0.5;
+}
+#detailtem {
+  width: 774px;
+}
+#detailtem > .wrap {
+  width: 100%;
+  height: 44px;
+}
+#detailtem > .wrap > .navtem {
+  width: 100%;
+  height: 100%;
+  position: sticky;
+  padding: 16px 0 13px 0;
+  background-color: #e7e7e7;
+}
+#detailtem > .wrap > .navtem > li {
+  float: left;
+  width: 129px;
+  border-right: 1px solid #cccccc;
+  text-align: center;
+  cursor: pointer;
+  font-size: 13px;
+}
+#detailtem > .wrap > .navtem > li:last-child {
+  border: none;
+}
+#gtemby {
+  width: 100%;
+}
+#gtemby img {
+  width: 100%;
+}
+#disimg {
+  float: left;
+  width: 372px;
+  height: 100%;
+  border: 1px solid #ececec;
+}
+#disimg > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#lbtimg {
+  float: right;
+  width: 85px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#lbtimg > div {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#lbtimg > div > li {
+  width: 85px;
+  height: 85px;
+  border: 1px solid #f4f4f4;
+  margin-bottom: 11px;
+}
+#lbtimg > div > li img {
+  width: 100%;
+  height: 100%;
+}
+#lbtimg > span {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 0;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0;
+  display: none;
+  z-index: 4;
+}
+#lbtimg > span:nth-of-type(1) {
+  top: 0;
+  background-position-y: -270px;
+}
+#lbtimg > span:nth-of-type(2) {
+  bottom: 0;
+  background-position-y: -210px;
+}
+#lbtimg:hover > span {
+  display: block;
+}
+#foot {
+  width: 100%;
+  height: 136px;
+  margin-top: 60px;
+  padding: 45px 0;
+}
+#foot .container {
+  height: 100%;
+}
+#foot .container h2 {
+  float: left;
+  width: 123px;
+  height: 100%;
+  background: url(../images/index/icon/logo@2x.cf8cc6a8.png) no-repeat 50%;
+  background-size: 100%;
+}
+#foot .container div {
+  float: right;
+  width: 700px;
+  height: 92px;
+  padding-right: 138px;
+  position: relative;
+}
+#foot .container div > span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 36px;
+  background: url(../images/index/icon/f-logo.c6285587.png) no-repeat 50%;
+  background-size: 100%;
+}
+#foot .container div p {
+  line-height: 23px;
+  font-size: 12px;
+}
+#foot .container div p:nth-child(1) > span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url(../images/index/icon/record-icon.d0289dc0.png) no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+}
+#fixbar {
+  width: 81px;
+  height: 363px;
+  position: fixed;
+  top: 220px;
+  right: 10px;
+  z-index: 999;
+  padding: 0 5px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+}
+#fixbar a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #e7e7e7;
+  text-align: center;
+}
+#fixbar a span:nth-child(1) {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0;
+}
+#fixbar a:nth-child(1) span:nth-child(1) {
+  background-position-y: -1646px;
+}
+#fixbar a:nth-child(1):hover > span {
+  background-position-y: -1612px;
+  color: #845f3f;
+}
+#fixbar a:nth-child(2) span:nth-child(1) {
+  background-position-y: -1274px;
+}
+#fixbar a:nth-child(2):hover > span {
+  background-position-y: -1240px;
+  color: #845f3f;
+}
+#fixbar a:nth-child(3) span:nth-child(1) {
+  background-position-y: -797px;
+}
+#fixbar a:nth-child(3):hover > span {
+  background-position-y: -763px;
+  color: #845f3f;
+}
+#fixbar a:nth-child(4) span:nth-child(1) {
+  background-position-y: -1002px;
+}
+#fixbar a:nth-child(4):hover > span {
+  background-position-y: -1784px;
+  color: #845f3f;
+}
+#fixbar a:nth-child(5) {
+  border: none;
+}
+#fixbar a:nth-child(5) span:nth-child(1) {
+  background-position-y: -1305px;
+}
+#fixbar a:nth-child(5):hover > span {
+  background-position-y: -1339px;
+  color: #845f3f;
+}

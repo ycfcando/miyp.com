@@ -1,0 +1,518 @@
+html,body{
+  width: 100%;
+}
+//public
+.container{
+  width: 1080px;
+  margin: 0 auto;
+}
+
+//header
+#head{
+  width: 100%;
+  height: 48px;
+  background: #333;
+  .container{
+    height: 100%;
+  }
+}
+#headList{
+  float: right;
+  height: 100%;
+  color: #e7e7e7;
+  &>span{
+    float: left;
+    height: 16px;
+    border-right: 1px solid #666;
+    margin-top: 17px;
+  }
+  li{
+    font-size: 14px;
+    float: left;
+    height: 100%;
+    padding: 0 10px;
+    line-height: 48px;
+    &>span{
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 0;
+      vertical-align: middle;
+    }
+    &:nth-of-type(3)>span{
+      background-position-y: -964px;
+    }
+    &:nth-of-type(5){   
+      position: relative;  
+      &:hover{
+        div{
+          height: 80px;
+        }
+      } 
+      &>span{
+        background-position-y: -1680px;     
+      }
+      &>div{
+        width: 100%;
+        height: 0;
+        box-shadow: 0 0 18px rgba(0, 0, 0,.1);
+        transition: 0.3s;
+        overflow: hidden;
+        position: absolute;
+        top: 100%;
+        left: -5px;
+        z-index: 5;
+        background: #fff;
+        a{
+          display: block;
+          width: 100%;
+          height: 40px;
+          text-align: center;
+          line-height: 40px;
+          color: #333;
+          &:hover{
+            color: #fff;
+            background-color: #845f3f;
+          }
+        }
+      }
+    }
+    a{      
+      color: #e7e7e7;
+      &:hover{
+        color: #fff;
+      }
+    }
+  }
+}
+
+//body
+#body{
+  width: 100%;
+}
+
+//search
+#search{
+  width: 100%;
+  height: 76px;
+  padding: 20px 0 5px 0;
+  .container{
+    height: 100%;
+    h1{
+      float: left;
+      height: 100%;
+      width: 123px;
+      text-indent: -9999px;
+      background: url(../images/index/icon/logo@2x.cf8cc6a8.png) no-repeat 50%;
+      background-size: 100%;
+    }
+    .left{
+      height: 100%;
+      float: right;
+      padding-left: 30px;
+      .h2Box{
+        height: 100%;
+        width: 420px;
+        float: left;
+        line-height: 51px;
+        a{
+          margin-right: 32px;
+          font-size: 18px;
+          color: #666;
+        }
+      }
+      .search{
+        float: right;
+        height: 100%;
+        label{
+          float: left;
+          width: 281px;
+          height: 41px;
+          padding: 9px 0 0 35px;
+          position: relative;
+          border-bottom: 1px solid #e7e7e7;
+          span{
+            position: absolute;
+            top: 50%-30px;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1474px;
+          }
+          input{
+            height: 100%;
+            width: 100%;
+            border: none;
+          }
+        }
+        &>a{
+          width: 30px;
+          height: 30px;
+          float: left;
+          margin-top: 12px;
+          background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1200px;
+        }
+      }
+    }
+  }
+}
+
+//detail
+#detail{
+  width: 100%;
+  padding-top: 60px;
+  border-top: 1px solid #e7e7e7;
+}
+#goodshead{
+  width: 100%;
+  height: 553px;
+  margin-bottom: 67px;
+  overflow: hidden;
+  &>.img{
+    float: left;
+    width: 465px;
+    height: 374px;
+    margin-right: 46px;
+  }
+  &>.text{
+    float: left;
+    width: 561px;
+    height: 553px;
+    &>h2{
+      width: 100%;
+      height: 26px;
+      line-height: 26px;
+      font-size: 20px;
+      color: #333;
+      font-weight: 100;
+    }
+    &>p{
+      width: 100%;
+      height: 18px;
+      line-height: 18px;
+      font-size: 12px;
+      color: #999;
+      &:nth-of-type(2){
+        width: 100%;
+        height: 40px;
+        padding: 0 10px 26px 10px;
+        font-size: 12px;
+        color: #333;
+        &>span{
+          margin-right: 10px;
+        }
+      }
+    }
+    &>.series{
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 26px;
+      margin-top: 20px;
+      background-color: #f9f9f9;
+      &>p{
+        height: 37px;
+        margin: 12px 0;
+        &>span{
+          display: inline-block;
+          height: 100%;
+          line-height: 32px;
+          &:nth-child(1){
+            width: 48px;
+            margin-right: 10px;
+            font-size: 12px;
+          }
+          &:nth-child(2){
+            font-size: 25px;
+            color: #c00000;
+          }
+          &:nth-child(3){
+            margin-left: 14px;
+            font-size: 12px;
+            color: #ccc;
+            text-decoration: line-through;
+          }
+        }
+      }
+      &>.bottom{
+        margin-bottom: 12px;
+        overflow: hidden;
+        &>span{
+          float: left;
+          width: 48px;
+          margin-right: 10px;
+          height: 72px;
+        }
+        &>p{
+          height: 24px;
+          &>span{
+            font-size: 16px;
+            display: inline-block;
+            padding-left: 24px;
+            background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -231px;
+          }
+        }
+      }
+    }
+    &>div:nth-of-type(2){
+      height: 52px;
+      margin-bottom: 14px;
+      padding: 10px 0;
+      &>span{
+        float: left;
+        width: 48px;
+        height: 32px;
+        line-height: 32px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 12px;
+        color: #333;
+      }
+      &>.wrap{
+        float: left;
+        border: 1px solid #d6d6d6;
+        font-size: 0;
+        &>span{
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          vertical-align: middle;
+          &:nth-of-type(1){
+            background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1406px;
+          }
+          &:nth-of-type(2){
+            background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1032px;
+          }
+        }
+        &>input{
+          width: 60px;
+          height: 30px;
+          border: none;
+          vertical-align: middle;
+          border-right: 1px solid #d6d6d6;
+          border-left: 1px solid #d6d6d6;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+#shopbtn{
+  width: 167px;
+  height: 52px;
+  line-height: 50px;
+  font-size: 20px;
+  border-radius: 2px;
+  text-align: center;
+  background-color: #845f3f;
+  border: none;
+  color: #fff;
+  &:hover{
+    opacity: .5;
+  }
+}
+
+#detailtem{
+  width: 774px;
+  &>.wrap{
+    width: 100%;
+    height: 44px;
+    &>.navtem{
+      width: 100%;
+      height: 100%;
+      position: sticky;
+      padding: 16px 0 13px 0;
+      background-color: #e7e7e7;
+      &>li{
+        float: left;
+        width: 129px;
+        border-right: 1px solid rgb(204, 204, 204);
+        text-align: center;
+        cursor: pointer;
+        font-size: 13px;
+        &:last-child{
+          border: none;
+        }
+      }
+    }
+  }
+}
+#gtemby{
+  width: 100%;
+  img{
+    width: 100%;
+  }
+}
+#disimg{
+  float: left;
+  width: 372px;
+  height: 100%;
+  border: 1px solid #ececec;
+  &>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+#lbtimg{
+  float: right;
+  width: 85px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  &>div{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    &>li{
+      width: 85px;
+      height: 85px;
+      border: 1px solid #f4f4f4;
+      margin-bottom: 11px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &>span{
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0;
+    display: none;
+    z-index: 4;
+    &:nth-of-type(1){
+      top: 0;
+      background-position-y: -270px;
+    }
+    &:nth-of-type(2){
+      bottom: 0;
+      background-position-y: -210px;
+    }
+  }
+}
+#lbtimg:hover>span{
+  display: block;
+}
+
+//foot
+#foot{
+  width: 100%;
+  height: 136px;
+  margin-top: 60px;
+  padding: 45px 0;
+  .container{
+    height: 100%;
+    h2{
+      float: left;
+      width: 123px;
+      height: 100%;
+      background: url(../images/index/icon/logo@2x.cf8cc6a8.png) no-repeat 50%;
+      background-size: 100%;
+    }    
+    div{
+      float: right;
+      width: 700px;
+      height: 92px;
+      padding-right: 138px;
+      position: relative;
+      &>span{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 36px;
+        background: url(../images/index/icon/f-logo.c6285587.png) no-repeat 50%;
+        background-size: 100%;
+      }
+      p{
+        line-height: 23px;
+        font-size: 12px;
+      }
+      p:nth-child(1)>span{
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url(../images/index/icon/record-icon.d0289dc0.png) no-repeat;
+        background-size: 100%;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+//fixbar
+#fixbar{
+  width: 81px;
+  height: 363px;
+  position: fixed;
+  top: 220px;
+  right: 10px;
+  z-index: 999;
+  padding: 0 5px;
+  box-shadow: 0 0 18px rgba(0, 0, 0,.1);
+  a{
+    @y: 34px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    text-align: center;
+    span:nth-child(1){
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin: 0 auto;
+      margin-bottom: 8px;
+      background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0;
+    }
+    &:nth-child(1){
+      span:nth-child(1){
+        background-position-y: -1646px;
+      }
+      &:hover>span{
+        background-position-y: -1646px+@y;
+        color: #845f3f;
+      }
+    }
+    &:nth-child(2){
+      span:nth-child(1){
+        background-position-y: -1274px;
+      }
+      &:hover>span{
+        background-position-y: -1274px+@y;
+        color: #845f3f;
+      }
+    }
+    &:nth-child(3){
+      span:nth-child(1){
+        background-position-y: -797px;
+      }
+      &:hover>span{
+        background-position-y: -797px+@y;
+        color: #845f3f;
+      }
+    }
+    &:nth-child(4){
+      span:nth-child(1){
+        background-position-y: -1002px;
+      }
+      &:hover>span{
+        background-position-y: -1784px;
+        color: #845f3f;
+      }
+    }
+    &:nth-child(5){
+      border: none;
+      span:nth-child(1){
+        background-position-y: -1305px;
+      }
+      &:hover>span{
+        background-position-y: -1305px-@y;
+        color: #845f3f;
+      }
+    }
+  }
+}

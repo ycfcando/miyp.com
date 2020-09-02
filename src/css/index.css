@@ -141,7 +141,7 @@ body {
   width: 100%;
   border: none;
 }
-#search .container .left .search > span {
+#search .container .left .search > a {
   width: 30px;
   height: 30px;
   float: left;
@@ -150,6 +150,7 @@ body {
 }
 #nav {
   height: 358px;
+  position: relative;
 }
 #nav nav {
   float: left;
@@ -175,10 +176,123 @@ body {
 #nav nav > li a:hover {
   color: #dfaf7e;
 }
-#nav div {
+#banner {
   float: left;
   width: 859px;
   height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#banner > span {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+}
+#banner > span:first-of-type {
+  top: 50%;
+  left: 0;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1940px;
+}
+#banner > span:first-of-type:hover {
+  background-position-y: -1814px;
+}
+#banner > span:last-of-type {
+  top: 50%;
+  right: 0;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1856px;
+}
+#banner > span:last-of-type:hover {
+  background-position-y: -1898px;
+}
+#banner > div {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 43%;
+}
+#banner > div > span {
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+#banner > div .banspan {
+  width: 10px;
+  height: 10px;
+  background: #999;
+}
+#bannergoods {
+  width: 6013px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#bannergoods > li {
+  float: left;
+  width: 859px;
+  height: 100%;
+  background-size: 100%;
+}
+#distem {
+  width: 859px;
+  position: absolute;
+  top: 0;
+  left: 221px;
+  z-index: 999;
+  background-color: #fff;
+}
+#nav > nav:hover + #distem {
+  height: 100%;
+}
+#templete {
+  width: 859px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding: 0 25px;
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+}
+#templete > li {
+  width: 100%;
+  margin: 15px 0;
+  margin-bottom: 20px;
+}
+#templete > li > h2 {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #845f3f;
+  font-weight: 900;
+}
+#templete > li > div {
+  width: 100%;
+  overflow: hidden;
+}
+#templete > li > div > h3 {
+  float: left;
+  width: 100px;
+  line-height: 15px;
+  padding-right: 30px;
+  margin: 15px 0;
+  font-size: 14px;
+  font-weight: 900;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 65px -69px;
+}
+#templete > li > div > p {
+  float: left;
+  width: 707px;
+  padding: 15px 0;
+  border-bottom: 1px dashed #999;
+}
+#templete > li > div > p > span {
+  margin-right: 10px;
 }
 #displayList {
   height: 189px;
@@ -389,6 +503,29 @@ body {
 #displaygood .goods2 .dpy {
   width: 100%;
   height: 354px;
+  position: relative;
+}
+#displaygood .goods2 .dpy > span {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+}
+#displaygood .goods2 .dpy > span:first-of-type {
+  top: 40%;
+  left: 0;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1940px;
+}
+#displaygood .goods2 .dpy > span:first-of-type:hover {
+  background-position-y: -1814px;
+}
+#displaygood .goods2 .dpy > span:last-of-type {
+  top: 40%;
+  right: 0;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1856px;
+}
+#displaygood .goods2 .dpy > span:last-of-type:hover {
+  background-position-y: -1898px;
 }
 #displaygood .goods3 {
   width: 100%;
@@ -429,6 +566,29 @@ body {
 #displaygood .goods3 .dpy {
   width: 100%;
   height: 375px;
+  position: relative;
+}
+#displaygood .goods3 .dpy > span {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+}
+#displaygood .goods3 .dpy > span:first-of-type {
+  top: 40%;
+  left: 0;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1940px;
+}
+#displaygood .goods3 .dpy > span:first-of-type:hover {
+  background-position-y: -1814px;
+}
+#displaygood .goods3 .dpy > span:last-of-type {
+  top: 40%;
+  right: 0;
+  background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1856px;
+}
+#displaygood .goods3 .dpy > span:last-of-type:hover {
+  background-position-y: -1898px;
 }
 #displaygood .goods4 {
   width: 100%;
@@ -450,38 +610,41 @@ body {
   width: 100%;
 }
 #domdpy1 {
-  width: 2660px;
+  width: 3000px;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-#domdpy1 li {
+#domdpy1 a {
   float: left;
   width: 266px;
   height: 100%;
   margin-left: 5px;
   transition: 0.4s;
 }
-#domdpy1 li .dpyInner {
+#domdpy1 a .dpyInner {
   width: 100%;
   height: 266px;
 }
-#domdpy1 li .dpyInner img {
-  width: 100%;
+#domdpy1 a .dpyInner img {
+  width: 266px;
   height: 100%;
 }
-#domdpy1 li .text {
+#domdpy1 a .text {
   width: 100%;
   height: 88px;
   padding: 13px 0 15px 0;
   background-color: #faf6ef;
 }
-#domdpy1 li .text p:first-child {
+#domdpy1 a .text p:first-child {
   color: #333;
   font-size: 19px;
   line-height: 23px;
   height: 23px;
   text-align: center;
 }
-#domdpy1 li .text p:last-child {
+#domdpy1 a .text p:last-child {
   margin-top: 11px;
   height: 26px;
   line-height: 26px;
@@ -489,52 +652,55 @@ body {
   color: #a92112;
   text-align: center;
 }
-#domdpy1 li .text p:last-child span:last-child {
+#domdpy1 a .text p:last-child span:last-child {
   font-size: 14px;
   color: #333;
   text-decoration: line-through;
 }
-#domdpy1 li:first-child {
+#domdpy1 a:first-child {
   margin: 0;
 }
-#domdpy1 li:hover {
+#domdpy1 a:hover {
   -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   -webkit-transform: translate3d(0, -2px, 0);
   transform: translate3d(0, -2px, 0);
 }
 #domdpy2 {
-  width: 2660px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3000px;
   height: 100%;
 }
-#domdpy2 li {
+#domdpy2 a {
   float: left;
   width: 266px;
   height: 100%;
   margin-left: 5px;
   transition: 0.4s;
 }
-#domdpy2 li .dpyInner {
+#domdpy2 a .dpyInner {
   width: 100%;
   height: 266px;
 }
-#domdpy2 li .dpyInner img {
+#domdpy2 a .dpyInner img {
   width: 100%;
   height: 100%;
 }
-#domdpy2 li .text {
+#domdpy2 a .text {
   width: 100%;
   height: 109px;
   padding: 13px 0 10px 0;
 }
-#domdpy2 li .text p:first-child {
+#domdpy2 a .text p:first-child {
   color: #333;
   font-size: 19px;
   line-height: 23px;
   height: 23px;
   text-align: center;
 }
-#domdpy2 li .text p:nth-child(2) {
+#domdpy2 a .text p:nth-child(2) {
   color: #666;
   font-size: 14px;
   line-height: 18px;
@@ -542,7 +708,7 @@ body {
   margin-top: 8px;
   text-align: center;
 }
-#domdpy2 li .text p:last-child {
+#domdpy2 a .text p:last-child {
   margin-top: 11px;
   height: 26px;
   line-height: 26px;
@@ -550,10 +716,10 @@ body {
   color: #a92112;
   text-align: center;
 }
-#domdpy2 li:first-child {
+#domdpy2 a:first-child {
   margin: 0;
 }
-#domdpy2 li:hover {
+#domdpy2 a:hover {
   -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   -webkit-transform: translate3d(0, -2px, 0);

@@ -145,7 +145,7 @@ html,body{
             border: none;
           }
         }
-        &>span{
+        &>a{
           width: 30px;
           height: 30px;
           float: left;
@@ -159,6 +159,7 @@ html,body{
 //nav
 #nav{
   height: 358px;
+  position: relative;
   nav{
     float: left;
     width: 221px;
@@ -183,12 +184,130 @@ html,body{
       }
     }
   }
-  div{
+}
+#banner{
+  float: left;
+  width: 859px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  &>span{
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    // border-radius: 50%;
+    // opacity: .35;
+    cursor: pointer;
+    &:first-of-type{
+      top: 50%;
+      left: 0;
+      background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1940px;
+      &:hover{
+        background-position-y: -1814px;
+      }
+    }
+    &:last-of-type{
+      top: 50%;
+      right: 0;
+      background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1856px;
+      &:hover{
+        background-position-y: -1898px;
+      }
+    }
+  }
+  &>div{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    left: 43%;
+    &>span{
+      float: left;
+      width: 10px;
+      height: 10px;
+      margin: 0 6px;
+      border-radius: 50%;
+      background: #fff;
+    }
+    .banspan{
+      width: 10px;
+      height: 10px;
+      background: #999;
+    }
+  }
+}
+#bannergoods{
+  width: 6013px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  &>li{
     float: left;
     width: 859px;
     height: 100%;
+    background-size: 100%;
   }
 }
+#distem{
+  width: 859px;
+  position: absolute;
+  top: 0;
+  left: 221px;
+  z-index: 999;
+  background-color: #fff;
+}
+#nav>nav{
+  &:hover+#distem{
+    height: 100%;
+  }
+}
+#templete{
+  width: 859px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding: 0 25px;
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+  &>li{
+    width: 100%;
+    margin: 15px 0;
+    margin-bottom: 20px;
+    &>h2{
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #845f3f;
+      font-weight: 900;
+    }
+    &>div{
+      width: 100%;
+      overflow: hidden;
+      &>h3{
+        float: left;
+        width: 100px;
+        line-height: 15px;
+        padding-right: 30px;
+        margin: 15px 0;
+        font-size: 14px;
+        font-weight: 900;
+        background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 65px -69px;
+      }
+      &>p{
+        float: left;
+        width: 707px;
+        padding: 15px 0;
+        border-bottom: 1px dashed #999;
+        &>span{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
 //displayList
 #displayList{
   height: 189px;
@@ -400,7 +519,32 @@ html,body{
     }
     .dpy{
       width: 100%;
-      height: 354px;     
+      height: 354px;
+      position: relative;
+      &>span{
+        position: absolute;
+        width: 38px;
+        height: 38px;
+        // border-radius: 50%;
+        // opacity: .35;
+        cursor: pointer;
+        &:first-of-type{
+          top: 40%;
+          left: 0;
+          background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1940px;
+          &:hover{
+            background-position-y: -1814px;
+          }
+        }
+        &:last-of-type{
+          top: 40%;
+          right: 0;
+          background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1856px;
+          &:hover{
+            background-position-y: -1898px;
+          }
+        }
+      }
     }
   }
   .goods3{
@@ -440,7 +584,32 @@ html,body{
     }
     .dpy{
       width: 100%;
-      height: 375px;     
+      height: 375px;  
+      position: relative;
+      &>span{
+        position: absolute;
+        width: 38px;
+        height: 38px;
+        // border-radius: 50%;
+        // opacity: .35;
+        cursor: pointer;
+        &:first-of-type{
+          top: 40%;
+          left: 0;
+          background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1940px;
+          &:hover{
+            background-position-y: -1814px;
+          }
+        }
+        &:last-of-type{
+          top: 40%;
+          right: 0;
+          background: url(../images/index/icon/yp-icons.7c45b9c9.png) no-repeat 0 -1856px;
+          &:hover{
+            background-position-y: -1898px;
+          }
+        }
+      }   
     }
   }
   .goods4{
@@ -464,9 +633,12 @@ html,body{
   }
 }
 #domdpy1{
-  width: 2660px;
+  width: 3000px;
   height: 100%;
-  li{
+  position: absolute;
+  top: 0;
+  left: 0;
+  a{
     float: left;
     width: 266px;
     height: 100%;
@@ -476,7 +648,8 @@ html,body{
       width: 100%;
       height: 266px;
       img{
-        width: 100%;
+        // width: 100%;
+        width: 266px;
         height: 100%;
       }
     }
@@ -518,9 +691,12 @@ html,body{
   }
 }
 #domdpy2{
-  width: 2660px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3000px;
   height: 100%;
-  li{
+  a{
     float: left;
     width: 266px;
     height: 100%;
