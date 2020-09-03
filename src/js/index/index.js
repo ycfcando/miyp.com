@@ -1,6 +1,14 @@
 import addgoods from './addgoods.js';
 import {adddomdpy1, lbtbtn} from './lbt.js';
 import {navtem} from './navtem.js';
+import {cookie} from '../lib/cookie.js'
+(function(){
+  if(!cookie.get('phone')){
+    $('#headList>li:first').html('<a href="http://localhost/miyp.com/src/html/loginpc.html">登录</a>&nbsp;&nbsp;<a href="">注册</a>');
+  }else{
+    $('#headList>li:first').html('<a>已登录</a>');
+  }
+})();
 window.onload=function(){
   let domdpy1 = document.getElementById('domdpy1');
   let domdpy2 = document.getElementById('domdpy2');

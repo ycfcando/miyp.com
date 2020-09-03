@@ -35,8 +35,13 @@ function addshop(){
       });
 
       shopbtn.on('click', function(){
-        value = parseInt(goodsnum.val());
-        addItem(msg['id'], msg['price'], value);
+          if(!cookie.get('phone')){
+            location.href = 'http://localhost/miyp.com/src/html/loginpc.html';
+          }else{
+            value = parseInt(goodsnum.val());
+            addItem(msg['id'], msg['price'], value);
+            alert('添加成功');
+          }
       });
     }
   });

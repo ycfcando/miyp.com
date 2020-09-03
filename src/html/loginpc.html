@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/loginpc.css">
+    <script src="../js/login/login.js" type="module"></script>
+    <script src="../js/lib/jquery.md5.js" type="module"></script>
 </head>
 
 <body>
@@ -19,12 +21,12 @@
                 </div>
                 <form action="" id="login">
                     <input type="text" id="username" placeholder="邮箱/手机号码/小米ID">
-                    <input type="password" id="password" placeholder="密码">
-                    <button id="loginBtn">登录</button>
+                    <input type="text" id="password" placeholder="密码">
+                    <div id="loginBtn">登录</div>
                 </form>
                 <div id="loginText">
-                    <a href="#">手机短信登入/注册</a>
-                    <a href="#">立即注册 | 忘记密码？</a>
+                    <a href="http://localhost/miyp.com/src/html/register.html">手机短信登入/注册</a>
+                    <a href="http://localhost/miyp.com/src/html/register.html">立即注册 | 忘记密码？</a>
                 </div>
                 <fieldset>
                     <legend>其他方式登录</legend>
@@ -36,7 +38,7 @@
                     <a href="#"><i></i></a>
                 </div>
             </article>
-            <div class="ercode"></div>
+            <div class="ercode"><a href="http://localhost/miyp.com/src/html/loginphone.html"></a></div>
         </section>
     </main>
     <footer id="foot">

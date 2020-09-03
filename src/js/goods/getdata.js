@@ -1,4 +1,4 @@
-import $ from '../../../node_modules/jquery/dist/jquery.min.js';
+import $ from '../lib/jquery.min.js';
 
 function getdata(){
   let id = location.search.split('=')[1];

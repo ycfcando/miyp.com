@@ -16,8 +16,6 @@
     $row = $row['storage'];
     $sql = "update domdpy1 set storage=$row-$shu where id=$num";
     $mysqli->query($sql);
-    // var_dump($row-$shu);
-    // array_push($arr,$row);
   }
   echo '购买成功';
 ?>

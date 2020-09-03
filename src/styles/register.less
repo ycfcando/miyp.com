@@ -37,6 +37,11 @@ html,body{
       &:hover{
         background-position-x: -80px;
       }
+      &>a{
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }
@@ -86,14 +91,18 @@ html,body{
       padding: 13px 16px 14px;
     }
     &:nth-child(2)>input{
+      width: 292px;
+      padding: 13px 16px 14px;
+    }
+    &:nth-child(3)>input{
       width: 245px;
       padding: 13px 16px 14px;
     }
-    &:nth-child(1)>span{
+    &:nth-child(1)>span:first-of-type{
       width: 64px;
       border-right: 1px solid #e0e0e0;
     }
-    &:nth-child(2)>span{
+    &:nth-child(3)>span:first-of-type{
       width: 111px;
       border-left: 1px solid #e0e0e0;
       a{
@@ -101,14 +110,53 @@ html,body{
       }
     }
   }
-  button{
+  &>div{
     width: 100%;
     height: 48px;
     background: #ff6700;
     color: #fff;
     border: 0 none;
+    text-align: center;
+    line-height: 48px;
     margin-bottom: 14px;
+    cursor: pointer;
   }
+}
+
+#disreg{
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  line-height: 48px;
+  border: none !important;
+  left: 100%;
+  top: 0;
+  padding-left: 20px;
+  text-align: left !important;
+}
+
+#psd{
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  line-height: 48px;
+  border: none !important;
+  left: 100%;
+  top: 0;
+  padding-left: 20px;
+  text-align: left !important;
+}
+
+#rancode{
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  line-height: 48px;
+  border: none !important;
+  left: 100%;
+  top: 0;
+  padding-left: 20px;
+  text-align: left !important;
 }
 
 #username{

@@ -1,6 +1,13 @@
-import $ from '../../../node_modules/jquery/dist/jquery.min.js';
+import $ from '../lib/jquery.min.js';
 import { cookie } from '../lib/cookie.js';
-
+(function(){
+  if(!cookie.get('phone')){
+    location.href = 'http://localhost/miyp.com/src/html/index.html';
+    $('#headList>li:first').html('<a href="http://localhost/miyp.com/src/html/loginpc.html">登录</a>&nbsp;&nbsp;<a href="">注册</a>');
+  }else{
+    $('#headList>li:first').html('<a>已登录</a>');
+  }
+})();
 (function() {
   let shop = cookie.get('shop');
 
@@ -174,12 +181,12 @@ import { cookie } from '../lib/cookie.js';
       //------------结算-------------------
       $('#pay').on('click', function(){
         let pri =  $('#shops>li>div>.sch');
-        let arr = [];
+        let arr = []; //储存id
+
         pri.map(val=>{
           arr.push(pri.eq(val).attr('num'));
         });
-        // console.log(shop);
-        let str = [];
+        let str = []; //提取选中的cookie
         shop.forEach(val=>{
           for(let i = 0; i < arr.length; i++){
             if(arr[i] == val.id){
@@ -187,8 +194,9 @@ import { cookie } from '../lib/cookie.js';
             }
           }
         });
+
+        str = JSON.stringify(str);  //以json字符串储存
         console.log(str);
-        str = JSON.stringify(str);
 
         //传送数据给后端
         $.ajax({
@@ -200,18 +208,15 @@ import { cookie } from '../lib/cookie.js';
             alert(res);
             //清除缓存
             
-            let result = [];
-            shop.forEach(val => {
-              for(let i = 0; i < arr.length; i++){
-                if(val.id == arr[i]){
-                  result.push(shop.indexOf(val));
+            for(let i = 0; i < arr.length; i++){
+              shop.forEach(val=>{
+                if(val.id==arr[i]){
+                  let index = shop.indexOf(val);
+                  shop.splice(index, 1);
                 }
-              }
-            })
-            console.log(result);
-            result.forEach(val=>{
-              shop.splice(val, 1);
-            })
+              });
+            }
+
             let str= JSON.stringify(shop);
             console.log(str);
             cookie.set('shop', str, 1);

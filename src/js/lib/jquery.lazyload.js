@@ -1,4 +1,4 @@
-import $ from '../../../node_modules/jquery/dist/jquery.min.js';
+import $ from './jquery.min.js';
 (function($, window, document, undefined) {
     var $window = $(window);
     $.fn.lazyload = function(options) {
